@@ -16,11 +16,12 @@ var reverseList = function(head) {
         let intermediate = current.next 
         // pointer (reference memory)
         current.next = previous 
-        // swipe emptylinkedList = currentLinkedList
+        // move previous LinkedList forward to next
         previous = current 
-        // swipe currentLinkedList = nextLinkedList (current.next)
+        // move current LinkedList forward to intermediate
         current = intermediate 
     }
+    // return reversed linkedList or reversed head
     return previous
 };
 
