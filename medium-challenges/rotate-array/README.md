@@ -9,7 +9,7 @@
 - O(n) => must be loop on each element in array from one time
 
 - Space complexity:
-- O(1) => according to destructuring array in modification place so when not create new array (as temporary space like swapping two variables) but already use the same one (under the hood js create temp array then save arr[left] and arr[right] then swap temp in the same array arr then garabage collection remove array from memory (automated))
+- O(1) => according to destructuring array in modification place so not need to create new array (as temporary space like swapping two variables) but already use the same one (under the hood js create temp array then save arr[left] and arr[right] then swap temp in the same array arr then garabage collection remove array from memory (automated))
 
 # Code
 ```javascript []
